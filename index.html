@@ -25,21 +25,23 @@
     </script>
   </head>
   <body class="bg-gray-100 min-h-screen py-6 font-body">
-    <!-- Top Navigation -->
-    <nav class="max-w-2xl mx-auto px-6 mb-16 flex justify-end">
-      <div class="flex space-x-4">
-        <a href="https://x.com/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:curtis@stro.me" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <!-- Top Navigation - Sticky -->
+    <nav id="top-nav" class="sticky top-0 z-10 bg-gray-100 py-4 shadow-sm">
+      <div class="max-w-2xl mx-auto px-6 flex justify-end">
+        <div class="social-links flex space-x-4">
+          <a href="https://www.linkedin.com/in/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/mcstrome" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:curtis@stro.me" class="text-gray-600 hover:text-blue-600 transition-colors text-lg" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
     </nav>
 
-    <main class="max-w-2xl mx-auto px-6">
+    <main class="max-w-2xl mx-auto px-6 mt-10">
       <!-- Header -->
       <div class="mb-20">
         <img src="avatar.jpg" alt="Curtis Strome" class="w-24 h-24 rounded-full shadow-sm mb-8" />
-        <h1 class="text-4xl font-bold text-gray-900 mb-2 font-heading">Curtis Strome</h1>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2 font-heading">Curtis Strome</h1>
       </div>
 
       <!-- About Section -->
@@ -49,14 +51,81 @@
         </p>
         <p class="text-base text-gray-700 mb-4">
             I'm a product manager & business builder based in Vancouver, Canada.
-          </p>
+        </p>
+          
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4 font-heading">Work</h2>
         <p class="text-base text-gray-700 mb-4">
-          I've spent the past decade building software in the finance & real estate industries for companies like <a href="https://rocket.com" class="text-blue-600 hover:underline inline-flex items-center">Rocket<img src="icon-rocket.ico" alt="Rocket icon" class="w-4 h-4 ml-1"></a> & <a href="https://www.lendesk.com" class="text-blue-600 hover:underline inline-flex items-center">Lendesk<img src="icon-lendesk.png" alt="Lendesk icon" class="w-4 h-4 ml-1"></a>, and in the marketing technology industry for <a href="https://www.eventbase.com" class="text-blue-600 hover:underline inline-flex items-center">Eventbase<img src="icon-eventbase.ico" alt="Eventbase icon" class="w-4 h-4 ml-1"></a>.
+          I've spent over a decade building software across finance, real estate, and marketing technology industries — working with teams at:
+        </p>
+        <div class="flex flex-wrap gap-4 text-base text-gray-700 mb-4">
+          <a href="https://rocket.com" class="text-blue-600 hover:underline inline-flex items-center">
+            Rocket<img src="icon-rocket.ico" alt="Rocket icon" class="w-4 h-4 ml-1">
+          </a>
+          <a href="https://www.lendesk.com" class="text-blue-600 hover:underline inline-flex items-center">
+            Lendesk<img src="icon-lendesk.png" alt="Lendesk icon" class="w-4 h-4 ml-1">
+          </a>
+          <a href="https://www.eventbase.com" class="text-blue-600 hover:underline inline-flex items-center">
+            Eventbase<img src="icon-eventbase.ico" alt="Eventbase icon" class="w-4 h-4 ml-1">
+          </a>
+        </div>
+        <p class="text-base text-gray-700 mb-4">
+            I earned my Computer Engineering degree from the <a href="https://uwaterloo.ca/engineering/" class="text-blue-600 hover:underline inline-flex items-center">University of Waterloo<img src="icon-waterloo.ico" alt="University of Waterloo icon" class="w-4 h-4 ml-1"></a>.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4 font-heading">Business</h2>
+        <p class="text-base text-gray-700 mb-4">
+            <a href="https://www.juntoe.com" target="_blank" class="text-blue-600 hover:underline inline-flex items-center">Juntoe Digital<img src="icon-juntoe.png" alt="Juntoe Digital icon" class="w-4 h-4 ml-1"></a> is a digital marketing agency.<br><br>We help local service businesses rank higher on Google, attract better leads, and grow revenue — without wasting money on ads.
         </p>
         <p class="text-base text-gray-700 mb-4">
-            Before that, I completed my Computer Engineering degree at the <a href="https://uwaterloo.ca/engineering/" class="text-blue-600 hover:underline inline-flex items-center">University of Waterloo<img src="icon-waterloo.ico" alt="University of Waterloo icon" class="w-4 h-4 ml-1"></a>.
+            If you think we could help your business grow, please contact: <a href="mailto:curtis@juntoe.com" class="text-blue-600 hover:underline">curtis@juntoe.com</a>
+        </p>
+        <div class="mt-6 mb-4">
+          <img src="wordmark-juntoe.png" alt="Juntoe Digital logo" class="w-full max-w-md">
+        </div>
+
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4 font-heading">Contact</h2>
+        <p class="text-base text-gray-700 mb-4">
+            Send me an <a href="mailto:curtis@stro.me" class="text-blue-600 hover:underline">email</a> and I'll be sure to respond.
         </p>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="max-w-2xl mx-auto px-6 mt-16 pb-6 text-center text-gray-500 text-sm">
+      <div class="mb-6" id="footer-social-links"></div>
+      <p>The information on this web page was last updated:<br>May 14, 2025</p>
+      <p class="mt-2">Thanks for dropping by! 👋</p>
+    </footer>
+
+    <!-- Script to create reusable social links component -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Clone the social links and add them to the footer section instead of contact
+        const socialLinks = document.querySelector('.social-links').cloneNode(true);
+        document.getElementById('footer-social-links').appendChild(socialLinks);
+        
+        // Update social links to be centered in footer
+        const footerSocialLinks = document.getElementById('footer-social-links').querySelector('.social-links');
+        footerSocialLinks.classList.remove('justify-end');
+        footerSocialLinks.classList.add('justify-center');
+        
+        // Function to sync changes between instances
+        function updateSocialLinks() {
+          const navSocialLinks = document.querySelector('nav .social-links');
+          const footerSocialLinks = document.getElementById('footer-social-links').querySelector('.social-links');
+          
+          // Update footer instance to match the nav one, but maintain centered alignment
+          footerSocialLinks.innerHTML = navSocialLinks.innerHTML;
+        }
+        
+        // Set up a mutation observer to watch for changes
+        const observer = new MutationObserver(updateSocialLinks);
+        observer.observe(document.querySelector('nav .social-links'), {
+          childList: true,
+          subtree: true,
+          attributes: true
+        });
+      });
+    </script>
   </body>
 </html>
